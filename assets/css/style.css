@@ -1,0 +1,279 @@
+
+/* Nodo Dia*/
+:root {
+  --colorAlura: #0a3871;
+  --colorTextAlura: #495057;
+  --textSerif: sans-serif;
+  --backgroundDay: #e5e5e5;
+}
+
+  img {
+    max-width: 100%;
+  }
+  
+
+  body {
+    background-color: var(--backgroundDay);
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+
+  }
+  
+   /* Estilo para el botón de cambio de modo */
+  #toggle-mode {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  #toggle-mode:hover{
+    background:linear-gradient( blue, pink);
+  }
+
+
+   /* Estilos de los para el modo nocturno y de dia */
+  body.day-mode {
+    color: var(--colorTextDay);
+  }
+  
+  body.night-mode {
+    background: black;
+    color: var(--colorNight);
+  }
+
+  .section-desepcritar.night-mode{
+    background:linear-gradient( blue, pink);
+  }
+  .section-desepcritar.night-mode .texto{
+    color: white;
+  }
+
+  footer.day-mode {
+    color: var(--colorDay);
+  }
+  
+  footer.night-mode {
+    color:#F18805;
+  }
+  
+
+
+  /* logo Alura */
+  .logo {
+    width: 90px;
+    display: block;
+    margin: 15% auto;
+  }
+  
+  /* Estilo del section encriptar*/
+  .section-encriptar {
+    margin-top: 90px;
+  }
+  
+  .text_area {
+    color: var(--colorAlura);
+    background: none;
+    border: 0;
+    resize: none;
+    font-family: var(--textSerif);
+    font-size: 25px;
+    width: 90%;
+    height: 65%;
+  }
+  
+  .text_area::placeholder {
+    color: var(--colorAlura);
+  }
+  
+  .text_area:focus {
+    outline: 0;
+  }
+  
+  
+  /* Estilo del para la alerta de la section encriptar*/
+  .contenedor_alerta {
+    display: flex;
+  }
+  
+  .texto {
+    display: inline-block;
+    color: var(--colorTextAlura);
+    font-family: var(--textSerif);
+    margin: 1px;
+    font-size: 16px;
+  }
+  
+
+  .contenedor_alerta_2 h3 {
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+  }
+  
+  .text_encriptado {
+    margin: 0 auto;
+    line-height: 30px;
+    height: 70%;
+    width: 90%;
+  }
+  
+  /* Estilo de los cotones*/
+  .contenedor_botones {
+    width: 90%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn {
+    width: 47%;
+    cursor: pointer;
+    font-family: var(--textSerif);
+    padding: 15px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  
+  .btn_encriptar {
+    color: white;
+    background-color: var(--colorAlura);
+    border: none;
+  }
+  
+  .btn_desencriptar {
+    color: var(--colorAlura);
+    border-color: var(--colorAlura);
+    background-color: transparent;
+  }
+  
+  .btn_copiar {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fff;
+    padding: 15px 10px;
+  }
+  
+  .btn_encriptar:hover, .btn_desencriptar:hover, .btn_copiar:hover{
+    background: linear-gradient(blue, pink);
+  }
+
+  /* Section desepcriptar*/
+  .section-desepcritar {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 1px 1px 30px 1px rgb(215, 208, 208);
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+    padding: 15px;
+    margin: 7% 9% 0;
+    height: 85vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* Alerta para el texto copiado*/
+  .alerta {
+    position: absolute;
+    bottom: 127px;
+    left: 37%;
+    background-color: green;
+    padding: 5px;
+    width: 70px;
+    font-size: 15px;
+    color: white;
+    font-family: var(--textSerif);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    font-family: var(--textSerif);
+    text-align: center;
+    color: #0a3871;
+    padding: 15px 10px;
+    background-color: transparent;
+    /*box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.1);*/
+  }
+  
+  /* Estilos de los botones de redes sociales */
+  .social-button {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Estilos de los botones de redes sociales al pasar el cursor */
+  .social-button:hover {
+    background-color: #666;
+  }
+
+  .mostrar {
+    display: block;
+  }
+  
+  .ocultar {
+    display: none;
+  }
+
+  
+  /* Media queries para dispositivos móviles y tablets */
+  
+  @media only screen and (max-width: 767px) {
+    body {
+      grid-template-columns: 100%;
+    }
+  
+    .logo {
+      margin: 3%;
+    }
+  
+    .section-encriptar {
+
+      margin: 5% 5% 0;
+    }
+  
+    .text_area {
+      font-size: 20px;
+    }
+  
+    .text_encriptado {
+      line-height: 24px;
+    }
+  
+    .section-desepcritar {
+      margin: 5% 5% 0;
+    }
+  
+    footer {
+        text-align: center;
+        margin: 2% auto; /* Agregado */
+        color: #0a3871;
+        padding: 15px 10px;
+      }
+  }
+  
+
+
+

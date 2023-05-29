@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link href="assets/img/alura.jpg" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Encriptador</title>
+</head>
+  <body>
+    <!-- header -->
+    <header>
+      <button class="logo" id="toggle-mode"><img class="logo" id=""src="assets/img/Logo.svg" alt=" logo de Alura"></button>
+    </header>
+
+    <!-- section 1 -->
+    <section class="section-encriptar">
+      <textarea class="text_area"  id="encriptar" name= "encriptar" cols="30" rows="10"  placeholder="Ingrese el texto aqui"></textarea>
+        <!-- contenedor del mensaje de alerta -->
+        <div class="contenedor_alerta">
+          <p class="texto" id="alertaTextarea"><i class="fas fa-exclamation-circle"></i> Solo letras minúsculas y sin acentos</p>
+        </div>
+        <!-- contenedor de los botones encriptar y desepcriptar -->
+        <div class="contenedor_botones">
+          <button class="btn btn_encriptar" id="" onclick="btnEncriptar()">Encriptar</button>
+          <button class="btn btn_desencriptar" id="" onclick="btnDesepcriptar()" >Desencriptar</button>
+        </div>
+    </section>
+    <!-- section 1-->
+
+    <!-- section 2-->
+    <section class="section-desepcritar">
+      <textarea class="text_area text_encriptado texto ocultar" id="mensaje" cols="30" rows="10" ></textarea>
+      <!-- contenedor de mensaje de alerta 2-->
+      <div class="contenedor_alerta_2" >
+        <img src="assets/img/Muñeco.svg" alt="imagen de Muñeco"class="img_munieco elemento"/>
+        <h3 class="texto elemento">Ningún mensaje fue encontrado</h3>
+        <p class="texto elemento"> Ingresa el texto que desees encriptar o desencriptar.</p>
+      </div>
+      <!-- contenedor boton copiar -->
+      <div>
+        <p class="alerta ocultar">copiado</p>
+        <button class="btn btn_desencriptar btn_copiar ocultar" id="btn_copiar" onclick="btnCopiar()" >Copiar</button>
+      </div>
+    </section>
+    <!-- section 2 -->
+
+    <!-- footer-->
+    <footer>
+      <p>Realizado por Alba Obando: Challenge Encriptador - Programa Oracle, Next Education</p> 
+      <a href="https://www.linkedin.com/in/alba-obando-521171214" class="social-button"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/AlbaObando" class="social-button"><i class="fab fa-github"></i></a>
+    </footer>
+    <!-- footer-->
+    
+    <!-- script-->
+    <script src="assets/js/script.js" ></script>
+  </body>
+</html>
